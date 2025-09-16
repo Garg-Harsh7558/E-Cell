@@ -1,0 +1,31 @@
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+  
+  .image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200%;
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-45deg);
+    transition: none; 
+  }
+  
+  .image-wrapper:hover::before {
+    animation: shine 1s linear forwards;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -200%;
+    }
+    100% {
+      left: 200%;
+    }
+  }
+ 

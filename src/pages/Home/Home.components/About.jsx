@@ -19,15 +19,16 @@ function About() {
       <div className="leadbottom  px-5 flex flex-wrap items-center justify-center space-x-0">
         <div className="pictures text-center">
           <div className="picture flex flex-col items-center">
-            <img src={Profile} alt="#" className="sm:h-auto sm:w-60 w-52" />
+            <img src={Profile} alt="Aman Raj" className="sm:h-auto sm:w-60 w-52" />
             <span className="leadName text-xl font-blinker ">Aman Raj</span>
             <span className="leadName font-blinker">Entrepreneurship Cell Secretary</span>
             <div className="socials flex flex-row items-center my-3">
               <a href="https://www.linkedin.com/in/aman-raj-804858208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Linkedin} alt="" />
+                <img src={Linkedin} alt="LinkedIn" />
               </a>
-              <a href="#">
-                <img src={Email} alt="" />
+              {/* ✅ FIX: Replaced '#' with a valid mailto: link */}
+              <a href="mailto:ecell@iiitbh.ac.in">
+                <img src={Email} alt="Email" />
               </a>
             </div>
           </div>
@@ -47,11 +48,11 @@ function About() {
             <img src={Down} alt="" className="downComma sm:w-24 h-auto w-16" />
           </div>
           <div className="team mt-4">
-          <button className="bg-black text-white rounded-full py-3 px-4 w-48 border-2 hover:bg-[#f9754b] transition duration-300 " onClick={()=>{
+            <button className="bg-black text-white rounded-full py-3 px-4 w-48 border-2 hover:bg-[#f9754b] transition duration-300 " onClick={() => {
               navigate("/meet");
-          }} >
+            }} >
               Meet Our Team
-          </button>
+            </button>
           </div>
         </div>
       </div>

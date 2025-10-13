@@ -62,7 +62,6 @@ function Competitions() {
     return (
         <div className="wrap bg-[rgba(5,18,25,1)] relative w-full h-full overflow-x-clip ">
             <div className=" w-full h-full" ><Navbar /></div>
-            {/* absolute top-0 z-10 */}
             <div className="competitions md:pt-[5vh] mx-8 md:mx-0 md:py-8">
                 <div className="compintro mb-6">
                     <div className="text-4xl md:text-5xl text-white font-blinker font-bold text-center mx-2 mb-4">
@@ -82,18 +81,22 @@ function Competitions() {
                 <div className="intro z-20 mt-8 sm:mt-12">
                     <div className="text-4xl md:text-5xl text-[#F9754B] font-blinker font-bold text-center mb-8">INITIATIVES</div>
                     <div className="flex flex-wrap mx-auto space-y-4 mm:space-y-0 align-center justify-center mm:justify-around mb-8 lg:justify-around lg:w-4/6 xl:w-3/5 ">
-                        <a href='#' className="ideastorm w-80 cursor-pointer" onClick={openIdeaCard}>
+                        {/* ✅ FIX: Replaced <a> tag with <button> for accessibility */}
+                        <button className="ideastorm w-80 cursor-pointer" onClick={openIdeaCard}>
                             <img src={Ideastorm} alt="Ideastorm" className='transform transition-transform duration-300 ease-in-out hover:scale-105 mm:mb-8 lg:w-100%' />
-                        </a>
-                        <a href='#' className="brandwar w-80 cursor-pointer" onClick={openBrandwar}>
+                        </button>
+                        {/* ✅ FIX: Replaced <a> tag with <button> for accessibility */}
+                        <button className="brandwar w-80 cursor-pointer" onClick={openBrandwar}>
                             <img src={BrandwarImage} alt="Brandwar" className='transform transition-transform duration-300 ease-in-out hover:scale-105 lg:w-100%' />
-                        </a>
-                        <a href='#' className="recruit w-80 cursor-pointer" onClick={openVirstock}>
+                        </button>
+                        {/* ✅ FIX: Replaced <a> tag with <button> for accessibility */}
+                        <button className="recruit w-80 cursor-pointer" onClick={openVirstock}>
                             <img src={Stock} alt="Recruit" className='transform transition-transform duration-300 ease-in-out hover:scale-105 lg:w-100%' />
-                        </a>
-                        <a href='#' className="vs w-80 cursor-pointer" onClick={openHiring}>
+                        </button>
+                        {/* ✅ FIX: Replaced <a> tag with <button> for accessibility */}
+                        <button className="vs w-80 cursor-pointer" onClick={openHiring}>
                             <img src={HiringImage} alt="VS" className='transform transition-transform duration-300 ease-in-out hover:scale-105 lg:w-100%' />
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

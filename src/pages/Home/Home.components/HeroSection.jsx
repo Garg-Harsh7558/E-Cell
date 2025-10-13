@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderGif from "../../../icon/HEADERGIF.gif";
-import Hero_Section_Small from '../../../lotties/Hero_Section_Small.json';
+// import Hero_Section_Small from '../../../lotties/Hero_Section_Small.json';
 import { useInView } from 'react-intersection-observer';
 
 function HeroSection({targetRef}) {

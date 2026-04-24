@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/ecell/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ecell",
+      "destination": "/index.html"
+    }
+  ]
+}

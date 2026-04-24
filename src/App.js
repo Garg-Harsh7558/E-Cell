@@ -11,7 +11,7 @@ import Gallerypage from './pages/Home/Home.components/Gallerypage';
 
 function App() {
   return (
-    <Router basename='/ecell' >
+    <Router basename='/ecell'>
       <Routes>
         <Route path="/" element={
            <Home/>

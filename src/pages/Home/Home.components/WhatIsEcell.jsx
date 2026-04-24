@@ -1,5 +1,5 @@
 import React,{forwardRef} from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "../../../lotties/WhatIsEcell.json";
 import vector1 from '../../../../src/icon/Vector (1).png';
 import vector2 from '../../../../src/icon/Vector (2).png';
@@ -26,7 +26,7 @@ const WhatIsEcell = forwardRef((props, ref) => {
           <img src={vector1} alt="vector1" className="z-1 absolute w-[40vw] right-[3.7vw] top-[-6.5vh]" ></img>
           <img src={vector2} alt="vector2" className="z-2 absolute w-[34vw] right-[7vw]" ></img>
           <div className=" w-[32vw]">
-          <Lottie options={defaultOptions} className=" absolute  z-3" />
+          <Lottie {...defaultOptions} className=" absolute  z-3" />
           </div>
             </div>
         </div>
@@ -67,7 +67,7 @@ const WhatIsEcell = forwardRef((props, ref) => {
          
           <img src={vector3} alt="vector3" className=" z-2 absolute w-[50vw] right-[25vw] top-[-5vw]  md:w-[45vw] md:top-[-4vw] md:right-[26vw] lg:w-[41vw] lg:right-[28.4vw]" ></img>
           <div className=" w-[39vw] md:w-[38vw] lg:w-[34vw] mx-auto ">
-          <Lottie options={defaultOptions} className=" absolute  z-3" />
+          <Lottie {...defaultOptions} className=" absolute  z-3" />
           </div>
             </div>
         </div>

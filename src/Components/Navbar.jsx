@@ -6,7 +6,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FaChevronDown } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [hide, setHide] = useState("hidden");
@@ -43,20 +43,19 @@ function Navbar() {
 
   return (
     <nav className="sticky top-0 big:backdrop-blur-lg  overflow-x-clip">
-      {/* making changes */}
+      {/* for small screens */}
       <div className="relative">
         <div className="big:hidden opacity-0 small:opacity-100 absolute z-10">
           <div className="small:relative big:hidden opacity-0 small:opacity-100">
             <div
               className={`text-white ${unhide} backdrop-blur-md h-[10vh]  small:opacity-100 opacity-0 flex  justify-between w-[100vw]  small:p-4 small:pr-5`}
-            >
+             >
               <div
                 className="flex"
                 onClick={() => {
-                  navigate("/ecell/");
+                  navigate("/");
                 }}
-              >
-                {/* ✅ FIX: Removed duplicate 'alt' prop */}
+                >
                 <img src={logo} className="h-[7.3vh]" alt="logo"></img>
                 <div className="flex flex-col text-epilogue font-extrabold cursor-pointer">
                   <div>E-CELL</div>
@@ -90,12 +89,12 @@ function Navbar() {
               </button>
             </div>
             <div className=" small:p-6   small:py-20 small:pl-[72%] text-white font-comforta flex flex-col justify-around small:h-[100%]">
-              <a
-                href="/ecell/"
+              <Link
+                to="/ecell/"
                 className="text-white text-lg flex  font-comfortaa   hover: duration-250 hover:delay-75  transition-all hover:scale-110 hover:text-orange-600  hover:underline hover:ease-in  "
               >
                 HOME
-              </a>
+              </Link>
               <div
                 className={`flex flex-col ${
                   initiative ? "h-[40%]" : ""
@@ -210,7 +209,6 @@ function Navbar() {
                 )}
               </div>
               <div className="flex justify-between pr-12">
-                {/* ✅ FIX: Added rel="noopener noreferrer" for security */}
                 <a
                   href="https://www.instagram.com/ecell_iiitbh?igsh=amVobWRleXBkMDZ3"
                   target="_blank"
@@ -236,31 +234,30 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </div>
-      {/* making changes end */}
-
+       </div>
+      {/* for small screens  end */}
+                  {/* large screens */}
       <div className=" backdrop-blur-lg w-[100%]  grid grid-cols-9  pl-[4%] pr-[9%] py-[0.68%] opacity-0 big:opacity-100 ">
-        {/* div to set logo  */}
 
         <div className=" flex items-center  col-span-2 cursor-pointer">
-          <a href="/ecell/">
+          <Link to="/">
             <img src={logo} alt="sample" />
-          </a>
+          </Link>
 
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-white text-lg leading-5 items-center font-epilogue font-extrabold cursor-pointer "
           >
             E-CELL<br></br>
             IIIT BHAGALPUR
-          </a>
+          </Link>
         </div>
         <div className="col-span-2"></div>
         {/* div for items */}
         <div className="flex  justify-between col-span-5 items-center font-comfortaa">
           <div className="cursor-pointer group text-white  text-[15px] font-semibold  flex flex-start items-center gap-x-[0.2vw] font-comfortaa   hover: duration-250 hover:delay-75  transition-all hover:scale-110 hover:text-orange-600  hover:underline hover:ease-in  ">
             <div className="cursor-pointer">
-              <a href="/ecell/">HOME</a>
+              <Link to="/">HOME</Link>
             </div>
           </div>
           <div className="group  flex flex-col text-center items-center relative">

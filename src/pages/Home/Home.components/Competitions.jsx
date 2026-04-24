@@ -6,7 +6,7 @@ import BrandwarImage from "../../../icon/Brandwar.png";
 import Ideastorm from "../../../icon/Ideastorm.png";
 import HiringImage from "../../../icon/Hiring.png";
 import animationData from "../../../lotties/Competitions.json";
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import IdeaCard from './Ideacard.jsx'; // Import the IdeaCard component
 import Brandwar from './Brandwar.jsx'; // Import the Brandwar component
 import Virstock from './virstock.jsx'; // Import the Virstock component
@@ -75,7 +75,7 @@ function Competitions() {
                         Additionally, E-Cell events facilitate meaningful connections among participants. Networking sessions and pitch contests provide platforms for attendees to present their ideas, receive feedback, and engage in constructive discussions, fostering a collaborative environment where ideas can flourish.
                     </div>
                     <div className=" w-auto order-1 md:order-3 hidden md:block">
-                        <Lottie options={defaultOptions} height={400} width={400} />
+                        <Lottie {...defaultOptions} style={{ height: 400, width: 400 }} />
                     </div>
                 </div>
                 <div className="intro z-20 mt-8 sm:mt-12">

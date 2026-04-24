@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import seminarsAnimation from "../../../lotties/Seminars.json";
 import seminar1 from "../../../icon/seminars1.png";
 import seminar2 from "../../../icon/seminars 2.png";
@@ -35,7 +35,7 @@ const Seminars = () => {
           <div className="flex justify-center items-center w-full mt-[12vh] ">
             <div className=" h-full w-full flex items-center justify-center">
               <div className="w-[30vw]  ">
-                <Lottie options={seminars} className="" />
+                <Lottie {...seminars} />
               </div>
             </div>
             <p className="font-blinker tracking-[2%] leading-[33px] space-x-[10px] w-full text-xl h-full ">
@@ -67,7 +67,7 @@ These seminars also create valuable networking opportunities, allowing participa
             </p>
             <div className=" h-full w-full flex  items-center justify-center">
               <div className="w-[60vw]  ">
-                <Lottie options={seminars} className="" />
+                <Lottie {...seminars} />
               </div>
             </div>
           </div>

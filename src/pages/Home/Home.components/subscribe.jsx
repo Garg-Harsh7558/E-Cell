@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "../../../lotties/subscribe.json";
 
 function Subscribe() {
@@ -36,7 +36,7 @@ function Subscribe() {
         </div>
       </div>
       <div className="right hidden md:block mt-10 md:mt-0 ml-4 md:ml-0">
-        <Lottie options={defaultOptions} height={300} width={300} />
+        <Lottie {...defaultOptions} style={{ height: 300, width: 300 }} />
       </div>
     </div>
   );

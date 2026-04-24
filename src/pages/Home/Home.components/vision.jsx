@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 
 import Vision_Arrow from "../../../lotties/Vision_Arrow.json";
 import Vision_ToExpand from "../../../lotties/Vision_ToExpand.json";
@@ -59,7 +59,7 @@ const Vision = () => {
         <div className="flex justify-between   px-[4vw] h-[40%]">
         <div className=" w-full h-full  flex items-center justify-center ">
             <div className="group group-hover:relative w-full bg-white flex flex-col rounded-3xl pt-[4vh] h-[78%]  items-center justify-center transition-all duration-300 hover:z-10 hover:scale-[107%]">
-              <Lottie options={Vision_ToLearns} className="" />
+              <Lottie {...Vision_ToLearns} />
               <div className=" text-white bg-black w-full rounded-b-3xl py-[1.5vh] font-comfortaa  text-center ">
               <div className="group-hover:hidden ">To Learn</div>
                 <div className="opacity-0 group-hover:opacity-100 overflow-hidden group-hover:transition-all group-hover:duration-300  group-hover:h-[65%] h-[0vh] group-hover:bottom-[0%] group-hover:font-comfortaa group-hover:text-[0.9vw] group-hover:p-[2vh] group-hover:bg-black group-hover:w-full group-hover:rounded-b-2xl group-hover:absolute  ">
@@ -80,14 +80,14 @@ const Vision = () => {
           </div> */}
           <div className="w-8/12 h-full flex items-start ">
             <div className="   rounded-3xl pt-[4vh]    rotate-[230deg]">
-              <Lottie options={Vision_Arrows} className="" />
+              <Lottie {...Vision_Arrows} />
               
             </div>
           </div>
 
           <div className=" w-full h-full  flex items-center justify-center ">
             <div className="group group-hover:relative w-full bg-white flex flex-col rounded-3xl pt-[4vh] h-[78%]  items-center justify-center transition-all duration-300 hover:z-10 hover:scale-[107%]">
-              <Lottie options={Vision_ToInnovates} className="" />
+              <Lottie {...Vision_ToInnovates} />
               <div className=" text-white bg-black w-full rounded-b-3xl py-[1.5vh] font-comfortaa  text-center ">
               <div className="group-hover:hidden ">To Innovate</div>
                 <div className="opacity-0 group-hover:opacity-100 overflow-hidden group-hover:transition-all group-hover:duration-300  group-hover:h-[55%] h-[0vh] group-hover:bottom-[0%] group-hover:font-comfortaa group-hover:text-[0.9vw] group-hover:p-[2vh] group-hover:bg-black group-hover:w-full group-hover:rounded-b-2xl group-hover:absolute  ">
@@ -114,14 +114,14 @@ const Vision = () => {
           
           <div className="w-8/12 h-full  flex items-end ">
             <div className="   rounded-3xl pt-[4vh]    rotate-[50deg]">
-              <Lottie options={Vision_Arrows} className="" />
+              <Lottie {...Vision_Arrows} />
               
             </div>
           </div>
 
           <div className=" w-full h-full  flex items-center justify-center ">
             <div className="group group-hover:relative w-full bg-white flex flex-col rounded-3xl pt-[4vh] h-[78%]  items-center justify-center transition-all duration-300 hover:z-10 hover:scale-[107%]">
-              <Lottie options={Vision_ToExpands} className="" />
+              <Lottie {...Vision_ToExpands} />
               <div className=" text-white bg-black w-full rounded-b-3xl py-[1.5vh] font-comfortaa  text-center ">
               <div className="group-hover:hidden ">To Expand</div>
                 <div className="opacity-0 group-hover:opacity-100 overflow-hidden group-hover:transition-all group-hover:duration-300  group-hover:h-[70%] h-[0vh] group-hover:bottom-[0%] group-hover:font-comfortaa group-hover:text-[0.9vw] group-hover:p-[2vh] group-hover:bg-black group-hover:w-full group-hover:rounded-b-2xl group-hover:absolute  ">
@@ -159,7 +159,7 @@ const Vision = () => {
         {/* <div className="flex flex-col justify-between   px-[4vw] h-[40%]"> */}
           <div className="group group-hover:relative w-full h-full px-[10vh]  flex items-center justify-center ">
             <div className=" bg-white flex flex-col rounded-3xl pt-[4vh] w-[300px] h-[250px] items-center justify-center transition-all duration-300 hover:z-10 hover:scale-[107%]">
-              <Lottie options={Vision_ToLearns} className="" />
+              <Lottie {...Vision_ToLearns} />
               <div className=" text-white bg-black w-full rounded-b-3xl py-[1.5vh] font-comfortaa  text-center ">
               <div className="group-hover:hidden ">To Expand</div>
                 <div className="opacity-0 group-hover:opacity-100 overflow-hidden group-hover:transition-all group-hover:duration-300  lg:group-hover:h-[52%] group-hover:h-[68%] sm:group-hover:h-[52%] md:group-hover:h-[52%]  group-hover:text-[11.5px] h-[0vh] group-hover:bottom-[0%] group-hover:font-comfortaa  group-hover:p-[2vh] group-hover:py-[1vh] group-hover:bg-black group-hover:w-full group-hover:rounded-b-2xl group-hover:absolute  ">
@@ -197,7 +197,7 @@ const Vision = () => {
           </div> */}
           <div className="group group-hover:relative w-full h-full px-[10vh]  flex items-center justify-center ">
             <div className=" bg-white flex flex-col rounded-3xl pt-[4vh] w-[300px] h-[250px] items-center justify-center transition-all duration-300 hover:z-10 hover:scale-[107%]">
-              <Lottie options={Vision_ToInnovates} className="" />
+              <Lottie {...Vision_ToInnovates} />
               <div className=" text-white bg-black w-full rounded-b-3xl py-[1.5vh] font-comfortaa  text-center ">
               <div className="group-hover:hidden ">To Innovate</div>
                 <div className="opacity-0 group-hover:opacity-100 overflow-hidden group-hover:h-[60%] sm:group-hover:h-[40%] md:group-hover:h-[40%] group-hover:transition-all group-hover:duration-300  lg:group-hover:h-[42%] group-hover:text-[11.5px] h-[0vh] group-hover:bottom-[0%] group-hover:font-comfortaa  group-hover:p-[2vh] group-hover:py-[1vh] group-hover:bg-black group-hover:w-full group-hover:rounded-b-2xl group-hover:absolute  ">
@@ -219,7 +219,7 @@ const Vision = () => {
           </div> */}
           <div className="group group-hover:relative w-full h-full px-[10vh]  flex items-center justify-center ">
             <div className=" bg-white flex flex-col rounded-3xl pt-[4vh] w-[300px] h-[250px] items-center justify-center transition-all duration-300 hover:z-10 hover:scale-[107%]">
-              <Lottie options={Vision_ToExpands} className="" />
+              <Lottie {...Vision_ToExpands} />
               <div className=" text-white bg-black w-full rounded-b-3xl py-[1.5vh] font-comfortaa  text-center ">
               <div className="group-hover:hidden ">To Expand</div>
                 <div className="opacity-0 group-hover:opacity-100 overflow-hidden group-hover:transition-all group-hover:duration-300  lg:group-hover:h-[55%] md:group-hover:h-[55%] group-hover:h-[65%] sm:group-hover:h-[55%] group-hover:text-[11.5px] h-[0vh] group-hover:bottom-[0%] group-hover:font-comfortaa  group-hover:p-[2vh] group-hover:py-[1vh] group-hover:bg-black group-hover:w-full group-hover:rounded-b-2xl group-hover:absolute  ">

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../../Components/Navbar'
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import workshopAnimation from '../../../lotties/Workshop.json'
 import photo1 from '../../../icon/workshopphoto1.png'
 import photo2 from '../../../icon/workshopphoto2.png'
@@ -31,7 +31,7 @@ const Workshop = () => {
             <div className='flex justify-center items-center w-full mt-[12vh] '>
               <div className=' h-full w-full flex items-center justify-center'>
                 <div className='w-[30vw]  '>
-                  <Lottie options={workshopjson} className="" />
+                  <Lottie {...workshopjson} />
                 </div>
               </div>
               <p className='font-blinker tracking-[2%] leading-[33px] space-x-[10px] w-full  h-full text-xl pb-20'>E-Cell workshops offer interactive sessions to enhance skills in entrepreneurship and business development. Covering key topics like business strategy, marketing, finance, and technology, these workshops provide hands-on learning from industry experts. Participants gain practical insights, tools, and techniques, along with networking opportunities and real-world case studies.
@@ -56,7 +56,7 @@ These workshops also facilitate valuable connections with industry professionals
               </p>
               <div className=' h-full w-full flex  items-center justify-center'>
                 <div className='w-[60vw]  '>
-                  <Lottie options={workshopjson} className="" />
+                  <Lottie {...workshopjson} />
                 </div>
               </div>
             </div>
@@ -66,10 +66,10 @@ These workshops also facilitate valuable connections with industry professionals
 
       {/* // cards here */}
         <div className=' grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 place-items-center lg:mt-[15vh] md:mt-[10vh] mt-[5vh]   px-[8vw]  gap-x-[2vw] gap-y-[10vh]'>
-          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#223C56] px-2 pt-2 transition-all duration-300 hover:z-10 hover:scale-[107%] hover:shadow-lg">
-            <img class="w-full" src={card2} alt="card" />
-            <div class="px-6 py-4 bg-[#223C56]">
-              <p class="text-white text-base text-center">
+          <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#223C56] px-2 pt-2 transition-all duration-300 hover:z-10 hover:scale-[107%] hover:shadow-lg">
+            <img className="w-full" src={card2} alt="card" />
+            <div className="px-6 py-4 bg-[#223C56]">
+              <p className="text-white text-base text-center">
                 The Entrepreneurship Workshop: A to Zis a comprehensive program guiding participants
                 through the entire entrepreneurial process. It covers idea generation, business planning, legal
                 considerations, funding, product development, marketing, operations, pitching, and scaling.
@@ -78,18 +78,18 @@ These workshops also facilitate valuable connections with industry professionals
               </p>
             </div>
           </div>
-          <div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#223C56] px-2 pt-2 transition-all duration-300 hover:z-10 hover:scale-[107%] hover:shadow-lg">
-            <img class="w-full" src={card1} alt="card" />
-            <div class="px-6 py-4 bg-[#223C56]">
-              <p class="text-white text-base text-center">
+          <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#223C56] px-2 pt-2 transition-all duration-300 hover:z-10 hover:scale-[107%] hover:shadow-lg">
+            <img className="w-full" src={card1} alt="card" />
+            <div className="px-6 py-4 bg-[#223C56]">
+              <p className="text-white text-base text-center">
               The Entrepreneurship Awareness Program is designed to introduce individuals to the fundamental concepts and opportunities in entrepreneurship. This comprehensive program provides an overview of the entrepreneurial landscape, including the key traits of successful entrepreneurs, the step-by-step process of starting a business, and the various resources available for aspiring founders. Participants will learn about market analysis, business planning, etc.
               </p>
             </div>
           </div>
-          {/* <div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#223C56] px-2 pt-2 transition-all duration-300 hover:z-10 hover:scale-[107%] hover:shadow-lg ">
-            <img class="w-full" src={cardphoto2} alt="image" />
-            <div class="px-6 py-4 bg-[#223C56]">
-              <p class="text-white text-base text-center">
+          {/* <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[#223C56] px-2 pt-2 transition-all duration-300 hover:z-10 hover:scale-[107%] hover:shadow-lg ">
+            <img className="w-full" src={cardphoto2} alt="image" />
+            <div className="px-6 py-4 bg-[#223C56]">
+              <p className="text-white text-base text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dicta laudantium quae velit voluptates perferendis illo numquam accusantium cupiditate nihil?
               </p>
             </div>

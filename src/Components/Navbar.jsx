@@ -75,7 +75,7 @@ function Navbar() {
               <button
                 className="flex"
                 onClick={() => {
-                  navigate("/ecell/");
+                  navigate("/");
                 }}
               >
                 <img src={logo} className="h-[7.3vh]" alt="sample"></img>
@@ -90,7 +90,7 @@ function Navbar() {
             </div>
             <div className=" small:p-6   small:py-20 small:pl-[72%] text-white font-comforta flex flex-col justify-around small:h-[100%]">
               <Link
-                to="/ecell/"
+                to="/"
                 className="text-white text-lg flex  font-comfortaa   hover: duration-250 hover:delay-75  transition-all hover:scale-110 hover:text-orange-600  hover:underline hover:ease-in  "
               >
                 HOME

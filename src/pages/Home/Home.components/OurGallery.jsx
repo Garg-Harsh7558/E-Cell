@@ -14,8 +14,8 @@ function OurGallery() {
             style={{ backgroundImage: `url(${GalleryBack})` }}>
             <div>
                 <h1 className='flex justify-center lg:text-6xl md:text-5xl small:text-3xl font-bold my-8 py-10 small:py-6 small:my-1'>
-                    <h1 className='text-[#e9e1e1]'>OUR &nbsp;</h1>
-                    <h1 className='text-[#f9744b]'> GALLERY</h1>
+                    <span className='text-[#e9e1e1]'>OUR &nbsp;</span>
+                    <span className='text-[#f9744b]'> GALLERY</span>
                 </h1>
             </div>
             <div className='text-center text-xl tracking-widest justify-center large:mx-56 large:mb-16 text-[#c5b9b9] small:text-sm'>

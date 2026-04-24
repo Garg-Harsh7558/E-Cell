@@ -23,11 +23,12 @@ function FooterSection() {
                 alt=""
                 className="sm:h-36 h-20 pr-2.5"
               />
-              <vr className="border-l-2 sm:h-36 h-20"></vr>
+              <div className="border-l-2 sm:h-36 h-20"></div>
             </div>
             <div className="info w-[63%] ss:w-[72%] md:pl-3 sm:w-3/5 md:mt-2.5">
               <div className="collegeNam font-inter text-white font-extrabold md:text-xl">
                 Indian Institute of Information Technology (IIIT) BHAGALPUR
+                
               </div>
               <div className="hidden md:block">
                 <br></br> <br></br>

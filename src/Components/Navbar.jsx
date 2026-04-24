@@ -70,7 +70,7 @@ function Navbar() {
             </div>
           </div>
           <div
-            className={`big:hidden ${hide}  small:relative      text-white z-50 small:w-[100vw] small:h-[100vh]  small:backdrop-blur-sm `}
+            className={`big:hidden ${hide}  small:relative text-white z-50 small:w-[100vw] small:h-[100vh]  small:backdrop-blur-sm `}
           >
             <div className="small:absolute flex justify-between  w-[100vw] small:top-0 small:right-0 small:p-4 small:pr-10">
               <button
